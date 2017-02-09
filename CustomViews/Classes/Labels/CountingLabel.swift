@@ -1,5 +1,5 @@
 //
-//  StyledLabel.swift
+//  CountingLabel.swift
 //  CustomViews
 //
 //  Created by Bondar Yaroslav on 18.01.17.
@@ -46,12 +46,12 @@ open class CountingLabel: UILabel {
     
     
     //        let duraction = TimeInterval(abs(randomNumber - current) / Float(10 * stringNumber.characters.count))
-    open func count(to value: String, animationType: AnimationType = .easeInOut) {
+    open func count(to value: String) {
         let intValue = Int(value)
         if let intValue = intValue {
-            countFrom(end, to: Float(intValue), withDuration: 0.3, andAnimationType: animationType, andCountingType: .int)
+            countFrom(end, to: Float(intValue), withDuration: 0.3, andAnimationType: .easeInOut, andCountingType: .int)
         } else {
-            countFrom(end, to: Float(value)!, withDuration: 0.3, andAnimationType: animationType, andCountingType: .float)
+            countFrom(end, to: Float(value)!, withDuration: 0.3, andAnimationType: .easeInOut, andCountingType: .float)
         }
         
     }
@@ -146,6 +146,4 @@ open class CountingLabel: UILabel {
             
         }
     }
-    
-    
 }

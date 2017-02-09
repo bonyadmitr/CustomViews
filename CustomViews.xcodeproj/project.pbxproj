@@ -15,7 +15,7 @@
 		66E034011E155A7B00C8AA9B /* RainbowTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E033FF1E155A7B00C8AA9B /* RainbowTableView.storyboard */; };
 		66E034041E155B5F00C8AA9B /* ResizableHeaderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E034031E155B5F00C8AA9B /* ResizableHeaderTableViewController.swift */; };
 		66E034071E155C2A00C8AA9B /* ResizableHeaderTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E034051E155C2A00C8AA9B /* ResizableHeaderTableView.storyboard */; };
-		66FB10BC1E2F2C6B00E985DD /* SACountingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB10BB1E2F2C6B00E985DD /* SACountingLabel.swift */; };
+		66FB10BC1E2F2C6B00E985DD /* CountingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB10BB1E2F2C6B00E985DD /* CountingLabel.swift */; };
 		66FB10C31E307FA300E985DD /* NoDelayTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB10C21E307FA300E985DD /* NoDelayTableView.swift */; };
 		66FB10C51E307FBD00E985DD /* StickyHeaderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB10C41E307FBD00E985DD /* StickyHeaderTableView.swift */; };
 		66FB10C71E30810B00E985DD /* NoDelayScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FB10C61E30810B00E985DD /* NoDelayScrollView.swift */; };
@@ -47,7 +47,7 @@
 		66E034001E155A7B00C8AA9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RainbowTableView.storyboard; sourceTree = "<group>"; };
 		66E034031E155B5F00C8AA9B /* ResizableHeaderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizableHeaderTableViewController.swift; sourceTree = "<group>"; };
 		66E034061E155C2A00C8AA9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ResizableHeaderTableView.storyboard; sourceTree = "<group>"; };
-		66FB10BB1E2F2C6B00E985DD /* SACountingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SACountingLabel.swift; sourceTree = "<group>"; };
+		66FB10BB1E2F2C6B00E985DD /* CountingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingLabel.swift; sourceTree = "<group>"; };
 		66FB10C21E307FA300E985DD /* NoDelayTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDelayTableView.swift; sourceTree = "<group>"; };
 		66FB10C41E307FBD00E985DD /* StickyHeaderTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickyHeaderTableView.swift; sourceTree = "<group>"; };
 		66FB10C61E30810B00E985DD /* NoDelayScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDelayScrollView.swift; sourceTree = "<group>"; };
@@ -83,13 +83,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6648C09B1E3113E20038790B /* Designable */ = {
+			isa = PBXGroup;
+			children = (
+				7B4706321E044364009BF704 /* DesignableTextField.swift */,
+			);
+			name = Designable;
+			sourceTree = "<group>";
+		};
 		66CECC411E23582B00F5A957 /* StickyHeaderTableView */ = {
 			isa = PBXGroup;
 			children = (
 				66CECC3E1E23581A00F5A957 /* StickyHeaderTableView.storyboard */,
 				7B4706341E047D2C009BF704 /* StickyHeaderTableViewController.swift */,
 			);
-			name = StickyHeaderTableView;
 			path = StickyHeaderTableView;
 			sourceTree = "<group>";
 		};
@@ -99,7 +106,6 @@
 				66CECC421E2358B500F5A957 /* AnimatedLabels.storyboard */,
 				7BE97E7A1E02E893001265EB /* AnimatedLabelsController.swift */,
 			);
-			name = AnimatedLabels;
 			path = AnimatedLabels;
 			sourceTree = "<group>";
 		};
@@ -109,7 +115,6 @@
 				66E033FF1E155A7B00C8AA9B /* RainbowTableView.storyboard */,
 				66E033FD1E15407400C8AA9B /* RainbowTableViewController.swift */,
 			);
-			name = RainbowTableView;
 			path = RainbowTableView;
 			sourceTree = "<group>";
 		};
@@ -119,8 +124,65 @@
 				66E034051E155C2A00C8AA9B /* ResizableHeaderTableView.storyboard */,
 				66E034031E155B5F00C8AA9B /* ResizableHeaderTableViewController.swift */,
 			);
-			name = ResizableHeaderTableView;
 			path = ResizableHeaderTableView;
+			sourceTree = "<group>";
+		};
+		66FB10CB1E31106F00E985DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7BE97E901E032AB4001265EB /* UIColor+Adjust.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		66FB10CC1E31134100E985DD /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				66E033FB1E15398900C8AA9B /* BackgroundDismissAlertController.swift */,
+			);
+			name = AlertController;
+			sourceTree = "<group>";
+		};
+		66FB10CD1E31135300E985DD /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				7B47062D1E044025009BF704 /* ResizableHeaderTableView.swift */,
+				66FB10C21E307FA300E985DD /* NoDelayTableView.swift */,
+				66FB10C41E307FBD00E985DD /* StickyHeaderTableView.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		66FB10CE1E31135C00E985DD /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				7B4706291E03AF09009BF704 /* ResizableCollectionView.swift */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		66FB10CF1E31136400E985DD /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				66C5789F1E2749B400B15AB9 /* ResizableTextView.swift */,
+			);
+			name = TextView;
+			sourceTree = "<group>";
+		};
+		66FB10D01E31136D00E985DD /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				66FB10C61E30810B00E985DD /* NoDelayScrollView.swift */,
+			);
+			name = ScrollView;
+			sourceTree = "<group>";
+		};
+		66FB10D11E31137B00E985DD /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				7BE97E8B1E02E8A5001265EB /* SpringButton.swift */,
+			);
+			name = Button;
 			sourceTree = "<group>";
 		};
 		7B4706311E044101009BF704 /* Labels */ = {
@@ -132,9 +194,8 @@
 				7B4706361E0522AC009BF704 /* SpringLabel.swift */,
 				7B8B7E561E069EA700C7B351 /* AdaptiveTextHeightLabel.swift */,
 				7B8B7E581E069F2B00C7B351 /* StyledLabel.swift */,
-				66FB10BB1E2F2C6B00E985DD /* SACountingLabel.swift */,
+				66FB10BB1E2F2C6B00E985DD /* CountingLabel.swift */,
 			);
-			name = Labels;
 			path = Labels;
 			sourceTree = "<group>";
 		};
@@ -160,7 +221,7 @@
 				7BE97E8F1E02E8C0001265EB /* Controllers */,
 				7BE97E8E1E02E8B2001265EB /* Classes */,
 				7BE97E781E02E893001265EB /* AppDelegate.swift */,
-				7BE97E901E032AB4001265EB /* UIColor+Adjust.swift */,
+				66FB10CB1E31106F00E985DD /* Extensions */,
 				7BE97E7F1E02E893001265EB /* Assets.xcassets */,
 				7BE97E811E02E893001265EB /* LaunchScreen.storyboard */,
 				7BE97E841E02E893001265EB /* Info.plist */,
@@ -171,18 +232,15 @@
 		7BE97E8E1E02E8B2001265EB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				66E033FB1E15398900C8AA9B /* BackgroundDismissAlertController.swift */,
-				7B4706291E03AF09009BF704 /* ResizableCollectionView.swift */,
-				7B47062D1E044025009BF704 /* ResizableHeaderTableView.swift */,
-				66C5789F1E2749B400B15AB9 /* ResizableTextView.swift */,
-				7B4706321E044364009BF704 /* DesignableTextField.swift */,
-				7BE97E8B1E02E8A5001265EB /* SpringButton.swift */,
-				66FB10C21E307FA300E985DD /* NoDelayTableView.swift */,
-				66FB10C41E307FBD00E985DD /* StickyHeaderTableView.swift */,
-				66FB10C61E30810B00E985DD /* NoDelayScrollView.swift */,
+				6648C09B1E3113E20038790B /* Designable */,
+				66FB10CC1E31134100E985DD /* AlertController */,
+				66FB10CE1E31135C00E985DD /* CollectionView */,
+				66FB10CD1E31135300E985DD /* TableView */,
+				66FB10CF1E31136400E985DD /* TextView */,
+				66FB10D01E31136D00E985DD /* ScrollView */,
+				66FB10D11E31137B00E985DD /* Button */,
 				7B4706311E044101009BF704 /* Labels */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -195,7 +253,6 @@
 				66E034021E155A9600C8AA9B /* RainbowTableView */,
 				66E034081E155C6500C8AA9B /* ResizableHeaderTableView */,
 			);
-			name = Controllers;
 			path = Controllers;
 			sourceTree = "<group>";
 		};
@@ -278,7 +335,7 @@
 			files = (
 				7BE97E7B1E02E893001265EB /* AnimatedLabelsController.swift in Sources */,
 				7B47062C1E043FD3009BF704 /* FadeLabel.swift in Sources */,
-				66FB10BC1E2F2C6B00E985DD /* SACountingLabel.swift in Sources */,
+				66FB10BC1E2F2C6B00E985DD /* CountingLabel.swift in Sources */,
 				7B47062E1E044025009BF704 /* ResizableHeaderTableView.swift in Sources */,
 				7B4706371E0522AC009BF704 /* SpringLabel.swift in Sources */,
 				7B4706301E0440CC009BF704 /* AnimatedLabel.swift in Sources */,

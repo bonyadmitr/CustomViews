@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AutoTextView: UITextView {
+class ResizableTextView: UITextView {
     
     override var contentSize:CGSize {
         didSet {
