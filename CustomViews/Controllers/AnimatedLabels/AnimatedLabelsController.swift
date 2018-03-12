@@ -31,7 +31,7 @@ class AnimatedLabelsController: UIViewController {
         someLabel3.text = stringNumber
         
         countingLabel1.count(to: stringNumber)
-        countingLabel2.count(to: stringNumber, animationType: .linear)
+        countingLabel2.count(to: randomNumber, duration: 3, animationType: .easeInOut, countingType: .custom)
         countingLabel3.count(to: randomNumber, duration: 0.3, animationType: .easeInOut, countingType: .custom)
         
     }
