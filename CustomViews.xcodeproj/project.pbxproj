@@ -36,6 +36,9 @@
 		7BE97E8C1E02E8A5001265EB /* MultilineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE97E8A1E02E8A5001265EB /* MultilineLabel.swift */; };
 		7BE97E8D1E02E8A5001265EB /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE97E8B1E02E8A5001265EB /* SpringButton.swift */; };
 		7BE97E911E032AB4001265EB /* UIColor+Adjust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE97E901E032AB4001265EB /* UIColor+Adjust.swift */; };
+		CEE0CD7D20528C2400488980 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CD7C20528C2300488980 /* TextField.swift */; };
+		CEE0CD7F20528C6000488980 /* CursorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CD7E20528C6000488980 /* CursorView.swift */; };
+		CEE0CD8120528C7800488980 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CD8020528C7800488980 /* Spinner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,9 @@
 		7BE97E8A1E02E8A5001265EB /* MultilineLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultilineLabel.swift; sourceTree = "<group>"; };
 		7BE97E8B1E02E8A5001265EB /* SpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringButton.swift; sourceTree = "<group>"; };
 		7BE97E901E032AB4001265EB /* UIColor+Adjust.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Adjust.swift"; sourceTree = "<group>"; };
+		CEE0CD7C20528C2300488980 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		CEE0CD7E20528C6000488980 /* CursorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursorView.swift; sourceTree = "<group>"; };
+		CEE0CD8020528C7800488980 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +246,9 @@
 				66FB10D01E31136D00E985DD /* ScrollView */,
 				66FB10D11E31137B00E985DD /* Button */,
 				7B4706311E044101009BF704 /* Labels */,
+				CEE0CD7C20528C2300488980 /* TextField.swift */,
+				CEE0CD7E20528C6000488980 /* CursorView.swift */,
+				CEE0CD8020528C7800488980 /* Spinner.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -335,6 +344,7 @@
 			files = (
 				7BE97E7B1E02E893001265EB /* AnimatedLabelsController.swift in Sources */,
 				7B47062C1E043FD3009BF704 /* FadeLabel.swift in Sources */,
+				CEE0CD7D20528C2400488980 /* TextField.swift in Sources */,
 				66FB10BC1E2F2C6B00E985DD /* CountingLabel.swift in Sources */,
 				7B47062E1E044025009BF704 /* ResizableHeaderTableView.swift in Sources */,
 				7B4706371E0522AC009BF704 /* SpringLabel.swift in Sources */,
@@ -351,7 +361,9 @@
 				7B4706351E047D2C009BF704 /* StickyHeaderTableViewController.swift in Sources */,
 				7BE97E8D1E02E8A5001265EB /* SpringButton.swift in Sources */,
 				66FB10C51E307FBD00E985DD /* StickyHeaderTableView.swift in Sources */,
+				CEE0CD8120528C7800488980 /* Spinner.swift in Sources */,
 				66E033FC1E15398900C8AA9B /* BackgroundDismissAlertController.swift in Sources */,
+				CEE0CD7F20528C6000488980 /* CursorView.swift in Sources */,
 				7B4706331E044364009BF704 /* DesignableTextField.swift in Sources */,
 				7B47062A1E03AF09009BF704 /* ResizableCollectionView.swift in Sources */,
 				7BE97E911E032AB4001265EB /* UIColor+Adjust.swift in Sources */,
