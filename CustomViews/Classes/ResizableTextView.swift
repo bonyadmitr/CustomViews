@@ -8,16 +8,27 @@
 
 import UIKit
 
+// TODO: Need to test
 class ResizableTextView: UITextView {
     
-    override var contentSize:CGSize {
+    override var contentSize: CGSize {
         didSet {
             invalidateIntrinsicContentSize()
         }
     }
     
     override var intrinsicContentSize: CGSize {
-        layoutIfNeeded()
-        return CGSize(width: CGFloat.greatestFiniteMagnitude, height: contentSize.height)
+        return contentSize
     }
+    /// old version
+//    override var contentSize:CGSize {
+//        didSet {
+//            invalidateIntrinsicContentSize()
+//        }
+//    }
+//    
+//    override var intrinsicContentSize: CGSize {
+//        layoutIfNeeded()
+//        return CGSize(width: CGFloat.greatestFiniteMagnitude, height: contentSize.height)
+//    }
 }

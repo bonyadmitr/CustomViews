@@ -37,6 +37,7 @@
 		7BE97E8D1E02E8A5001265EB /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE97E8B1E02E8A5001265EB /* SpringButton.swift */; };
 		7BE97E911E032AB4001265EB /* UIColor+Adjust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE97E901E032AB4001265EB /* UIColor+Adjust.swift */; };
 		CE2DBA172058EEE900D08C5E /* TimerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DBA162058EEE900D08C5E /* TimerLabel.swift */; };
+		CECBA01D206840F400FF0941 /* ResizableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECBA01C206840F400FF0941 /* ResizableTableView.swift */; };
 		CEE0CD7D20528C2400488980 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CD7C20528C2300488980 /* TextField.swift */; };
 		CEE0CD7F20528C6000488980 /* CursorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CD7E20528C6000488980 /* CursorView.swift */; };
 		CEE0CD8120528C7800488980 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0CD8020528C7800488980 /* Spinner.swift */; };
@@ -75,6 +76,7 @@
 		7BE97E8B1E02E8A5001265EB /* SpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringButton.swift; sourceTree = "<group>"; };
 		7BE97E901E032AB4001265EB /* UIColor+Adjust.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Adjust.swift"; sourceTree = "<group>"; };
 		CE2DBA162058EEE900D08C5E /* TimerLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerLabel.swift; sourceTree = "<group>"; };
+		CECBA01C206840F400FF0941 /* ResizableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableTableView.swift; sourceTree = "<group>"; };
 		CEE0CD7C20528C2300488980 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		CEE0CD7E20528C6000488980 /* CursorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursorView.swift; sourceTree = "<group>"; };
 		CEE0CD8020528C7800488980 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				CEE0CD7E20528C6000488980 /* CursorView.swift */,
 				CEE0CD8020528C7800488980 /* Spinner.swift */,
 				CE2DBA162058EEE900D08C5E /* TimerLabel.swift */,
+				CECBA01C206840F400FF0941 /* ResizableTableView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECBA01D206840F400FF0941 /* ResizableTableView.swift in Sources */,
 				7BE97E7B1E02E893001265EB /* AnimatedLabelsController.swift in Sources */,
 				7B47062C1E043FD3009BF704 /* FadeLabel.swift in Sources */,
 				CEE0CD7D20528C2400488980 /* TextField.swift in Sources */,

@@ -8,27 +8,10 @@
 
 import UIKit
 
-// v1
 class ResizableCollectionView: UICollectionView {
-
+    
     override var contentSize: CGSize {
         didSet {
-            invalidateIntrinsicContentSize()
-        }
-    }
-
-    override var intrinsicContentSize: CGSize {
-        layoutIfNeeded()
-        return CGSize(width: UIViewNoIntrinsicMetric, height: contentSize.height)
-    }
-}
-
-// v2
-class DynamicCollectionView: UICollectionView {
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        if bounds.size != intrinsicContentSize {
             invalidateIntrinsicContentSize()
         }
     }
@@ -37,3 +20,34 @@ class DynamicCollectionView: UICollectionView {
         return contentSize
     }
 }
+
+// v2
+//class ResizableCollectionView2: UICollectionView {
+//
+//    override var contentSize: CGSize {
+//        didSet {
+//            invalidateIntrinsicContentSize()
+//        }
+//    }
+//
+//    override var intrinsicContentSize: CGSize {
+//        layoutIfNeeded()
+//        return CGSize(width: UIViewNoIntrinsicMetric, height: contentSize.height)
+//    }
+//}
+
+// v3
+//class DynamicCollectionView: UICollectionView {
+//    
+//    override func layoutSubviews() {
+//        super.layoutSubviews()
+//        if bounds.size != intrinsicContentSize {
+//            invalidateIntrinsicContentSize()
+//        }
+//    }
+//    
+//    override var intrinsicContentSize: CGSize {
+//        return contentSize
+//    }
+//}
+
